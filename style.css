@@ -1,0 +1,152 @@
+/* ===== 全局重置：去掉浏览器默认边距 ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background: #f9fafb;
+}
+
+/* ===== 导航栏 ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2563eb;
+}
+
+nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #4b5563;
+}
+nav a:hover {
+  color: #2563eb;
+}
+
+/* ===== 首屏 hero ===== */
+#hero {
+  text-align: center;
+  padding: 80px 32px;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+#hero p {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+#startBtn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  color: #fff;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#startBtn:hover {
+  background: #1d4ed8;
+}
+
+#status {
+  margin-top: 16px;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* ===== 特性区：flex 三列 ===== */
+#features {
+  display: flex;
+  gap: 24px;
+  padding: 48px 32px;
+  background: #ffffff;
+}
+
+#features h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.feature {
+  flex: 1;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f9fafb;
+}
+.feature h3 {
+  margin-bottom: 8px;
+  color: #2563eb;
+}
+
+/* ===== 定价区：flex 三列，h2 独占一行 ===== */
+#pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 48px 32px;
+  background: #f9fafb;
+}
+
+#pricing h2 {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.plan {
+  flex: 1;
+  min-width: 200px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.plan .price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 8px 0 16px;
+}
+
+.plan .price span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+.plan ul {
+  list-style: none;
+}
+
+.plan li {
+  padding: 4px 0;
+  color: #4b5563;
+}
+
+/* ===== 页脚 ===== */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
