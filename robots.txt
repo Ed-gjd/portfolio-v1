@@ -1,0 +1,6 @@
+# 爬虫规则（课23）
+User-agent: *          # 对所有搜索引擎爬虫生效
+Allow: /               # 允许抓取全站
+
+# 告诉搜索引擎站点地图在哪（帮助收录）
+Sitemap: https://di5hc23rfibz1.cloudfront.net/sitemap.xml
