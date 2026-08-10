@@ -3,76 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FocusFlow · 让每次专注都有回报</title>
+  <title>Ed · 全栈作品集</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <nav>
-      <span class="logo">FocusFlow</span>
-      <a href="#features">功能</a>
-      <a href="#pricing">定价</a>
+      <span class="logo">Ed · Portfolio</span>
+      <a href="#projects">项目</a>
+      <a href="https://github.com/Ed-gjd" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
 
   <main>
-    <!-- 首屏：一句话说清卖什么 + 一个按钮 -->
+    <!-- 首屏：我是谁 -->
     <section id="hero">
-      <h1>让每次专注，都有回报</h1>
-      <p>番茄工作法计时器，自动把你的专注攒成成就墙</p>
-      <button id="startBtn">免费开始</button>
+      <h1>从小白到全栈，我做了 6 个真实项目</h1>
+      <p>作品集 / 博客 / 数据看板 / 小商城 / CRM / 知识库AI（进行中）</p>
       <p id="status"></p>
     </section>
 
-    <!-- 特性区：三个卖点 -->
-    <section id="features">
-      <h2>三大特性</h2>
-      <div class="feature">
-        <h3>番茄计时</h3>
-        <p>25 分钟一轮，零打扰</p>
-      </div>
-      <div class="feature">
-        <h3>成就墙</h3>
-        <p>专注时长可视化</p>
-      </div>
-      <div class="feature">
-        <h3>数据统计</h3>
-        <p>看清时间花在哪</p>
-      </div>
-    </section>
+    <!-- 项目区：6 个项目的卡片网格 -->
+    <section id="projects">
+      <h2>项目作品集</h2>
+      <div class="grid">
 
-    <!-- 定价区：三档套餐（落地页扩展，课4） -->
-    <section id="pricing">
-      <h2>定价</h2>
-      <div class="plan">
-        <h3>Free</h3>
-        <p class="price">$0<span>/月</span></p>
-        <ul>
-          <li>每月 25 个番茄</li>
-          <li>基础统计</li>
-        </ul>
-      </div>
-      <div class="plan">
-        <h3>Pro</h3>
-        <p class="price">$5<span>/月</span></p>
-        <ul>
-          <li>无限番茄</li>
-          <li>成就墙导出</li>
-        </ul>
-      </div>
-      <div class="plan">
-        <h3>Team</h3>
-        <p class="price">$15<span>/月</span></p>
-        <ul>
-          <li>Pro 全部</li>
-          <li>团队统计</li>
-        </ul>
+        <div class="card">
+          <h3>① 产品落地页</h3>
+          <p>纯 HTML/CSS/JS 落地页，S3 + CloudFront 上线，HTTP/HTTPS 全球分发。</p>
+          <a href="https://github.com/Ed-gjd/portfolio-v1" target="_blank" rel="noopener">代码</a>
+          <a href="https://di5hc23rfibz1.cloudfront.net/" target="_blank" rel="noopener">演示</a>
+        </div>
+
+        <div class="card">
+          <h3>② 博客系统</h3>
+          <p>FastAPI + SQLite，文章 CRUD，Docker + nginx 一条命令上线。</p>
+          <a href="https://github.com/Ed-gjd/blog-v1" target="_blank" rel="noopener">代码</a>
+          <a href="http://192.168.169.133/" target="_blank" rel="noopener">演示</a>
+        </div>
+
+        <div class="card">
+          <h3>③ 数据看板</h3>
+          <p>React + FastAPI 前后端分离，JWT 认证 + Recharts 趋势图 + CI 自动化。</p>
+          <a href="https://github.com/Ed-gjd/dashboard-v1" target="_blank" rel="noopener">代码</a>
+        </div>
+
+        <div class="card">
+          <h3>④ 小商城</h3>
+          <p>事务扣库存防超卖 + 模拟支付状态机，CD 版本化部署 + 一键回滚。</p>
+          <a href="https://github.com/Ed-gjd/shop-v1" target="_blank" rel="noopener">代码</a>
+          <a href="http://192.168.169.133:8080/" target="_blank" rel="noopener">演示</a>
+        </div>
+
+        <div class="card">
+          <h3>⑤ CRM 客户管理</h3>
+          <p>企业级权限 RBAC + 审计日志 + WebSocket 实时通知，前后端分离。</p>
+          <a href="https://github.com/Ed-gjd/crm-v1" target="_blank" rel="noopener">代码</a>
+        </div>
+
+        <div class="card upcoming">
+          <h3>⑥ 知识库 AI</h3>
+          <p>LLM 接入 + RAG 检索问答 + MCP Server（进行中）</p>
+          <span class="badge">进行中</span>
+        </div>
+
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 FocusFlow · 学习项目作品集 v1</p>
+    <p>© 2026 Ed · webdev 课程作品集（v2 总入口）</p>
   </footer>
 
   <script src="app.js"></script>
